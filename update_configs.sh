@@ -23,6 +23,11 @@ for config in `ls -1 *.nrds.cfg*`; do
     echo ""
 
     #grep -i "^${directive}" ${config} | sed -e "s|\(\"\).*\(\"\)|\1${new_value}\2|"
+    # 
+    # What if we wanted to update locations of check files as well ?
+    # 
+    # sed -i "s|\(${directive}\[A-Za-z0-9-_\]*\"\).*\(\"\)|\1${new_value}\2|" ${config}"
+    #
     sed -i "s|\(${directive}=\"\).*\(\"\)|\1${new_value}\2|" ${config}
 
     echo ""
