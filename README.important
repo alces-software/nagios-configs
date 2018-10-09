@@ -1,0 +1,13 @@
+Deviating From the Instructions for nextgen2
+
+
+check_nrpe is run on the controller, which runs a command via nrpe on admin01 which (as the two can communicate directly), 
+On the controller: old files MUST Not be removed.
+
+Before removing the crontab for the Nagios user:
+
+*/3 * * * * /usr/local/nrdp/clients/nrds/nrds.pl -c /usr/local/nrdp/clients/nrds/nrds_headnode2.cfg -H headnode2.nextgen > /dev/null 2>&1
+
+Change the UID and GID ownership of these files to the new Nagios user.
+
+chown nagios:nagios -R /usr/local/nrdp
