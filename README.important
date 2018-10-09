@@ -1,5 +1,8 @@
 Deviating From the Instructions for nextgen2
 
+The following command must be run on the controller before the repositories can be cloned:
+
+export HTTPS_PROXY=http://10.78.0.10:3128; export HTTP_PROXY=$HTTPS_PROXY
 
 check_nrpe is run on the controller, which runs a command via nrpe on admin01 which (as the two can communicate directly), 
 On the controller: old files MUST Not be removed.
