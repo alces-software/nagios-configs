@@ -2,7 +2,7 @@
 
 if [ -z $1 ] || [ -z $2 ]; then
     echo "Error! Usage: $0 <Plugin filename> <Plugin Arguments> <service_description>"
-    echo "e.g. $0 check_uptime.sh 30 Check Uptime"
+    echo "e.g. $0 check_uptime.sh.sh 30 Check Uptime"
     exit 1
 fi
 
