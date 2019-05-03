@@ -1,7 +1,7 @@
 url="https://10.78.0.31/nrdp/"
 token="Lkz123kMj2oP4"
 this_host=`hostname -f | sed 's|.alces.network$||'`
-cron_schedule='@reboot sleep 240 &&'
+cron_schedule='@reboot'
 
 # check:target_host:service_description:check:arguments
 declare -a checks=(
