@@ -16,7 +16,7 @@ echo "Directive is: ${directive}"
 new_value=$2
 echo "new_value is: ${new_value}"
 
-for config in `ls -1 *.nrds.cfg*`; do
+for config in `ls -1 *.cfg*`; do
     
     echo ""
     echo "Updating: ${config}"
